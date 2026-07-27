@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { HelpCircle, ChevronDown, CreditCard, CalendarCheck, Utensils, Leaf, MapPin } from 'lucide-react';
 
 interface FAQItem {
@@ -11,7 +10,7 @@ interface FAQItem {
   highlight?: string;
 }
 
-const faqs: FAQItem[] = [
+export const faqs: FAQItem[] = [
   {
     question: '¿Se puede pagar con tarjeta bancaria?',
     answer:
@@ -22,25 +21,25 @@ const faqs: FAQItem[] = [
   {
     question: '¿Hace falta reservar mesa antes de ir?',
     answer:
-      'No es estrictamente obligatorio, pero es muy recomendable reservar, especialmente para las cenas de viernes y sábados o si venís en grupo. Podéis reservar fácilmente escribiéndonos directamente por WhatsApp o llamándonos por teléfono al +34 936 69 35 34.',
+      'Sí, recomendamos reservar los fines de semana por WhatsApp o llamada, especialmente para grupos de 4 o más personas.',
     icon: CalendarCheck,
   },
   {
     question: '¿Ofrecen menú del mediodía?',
     answer:
-      '¡Sí! De lunes a viernes en horario de comida (13:00 a 16:00) contamos con un excelente menú del mediodía que incluye platos de pasta artesanal o pizza recién horneada, bebida y postre casero.',
+      'Sí, de lunes a viernes de 13:00 a 16:00, pizza o pasta + bebida + postre casero.',
     icon: Utensils,
   },
   {
     question: '¿Tienen opciones vegetarianas y veganas?',
     answer:
-      'Por supuesto. Contamos con una amplia variedad de opciones vegetariana como la Pizza Vegetariana, Pizza 4 Quesos, Pizza de Champiñones y Trufa, Gnocchi 4 Quesos, Pasta Fresca con Pesto de Pistacho y Burrata fresca. También podemos adaptar ciertas pizzas sin queso para veganos.',
+      'Sí, adaptamos varios platos de la carta, consúltalo al pedir.',
     icon: Leaf,
   },
   {
     question: '¿Dónde está exactamente el restaurante y cómo llegar?',
     answer:
-      'Nos encontramos en Carrer de Mallorca, 235 (08008 Barcelona), en pleno corazón del Eixample. Estamos a escasos minutos a pie de la estación FGC Provença y muy cerca de Passeig de Gràcia.',
+      'En Carrer de Mallorca, 235, Eixample, a pocos pasos de Passeig de Gràcia y la estación FGC Provença — bajas unas escaleras y ahí está la entrada.',
     icon: MapPin,
   },
 ];
@@ -72,7 +71,7 @@ export default function FAQSection() {
           </p>
         </div>
 
-        {/* FAQ Accordion List */}
+        {/* FAQ Accordion List - Always Rendered in DOM for SEO Crawlers */}
         <div className="space-y-4">
           {faqs.map((faq, idx) => {
             const Icon = faq.icon;
@@ -89,7 +88,7 @@ export default function FAQSection() {
               >
                 <button
                   onClick={() => toggleFAQ(idx)}
-                  className="w-full p-6 text-left flex items-center justify-between space-x-4 focus:outline-none"
+                  className="w-full p-6 text-left flex items-center justify-between space-x-4 focus:outline-none min-h-[44px]"
                   aria-expanded={isOpen}
                 >
                   <div className="flex items-center space-x-4">
@@ -102,9 +101,9 @@ export default function FAQSection() {
                           {faq.highlight}
                         </span>
                       )}
-                      <p className="text-base sm:text-lg font-serif text-[#F5F1E8] font-medium">
+                      <h3 className="text-base sm:text-lg font-serif text-[#F5F1E8] font-medium">
                         {faq.question}
-                      </p>
+                      </h3>
                     </div>
                   </div>
 
@@ -115,20 +114,18 @@ export default function FAQSection() {
                   />
                 </button>
 
-                <AnimatePresence>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <div className="px-6 pb-6 pt-2 border-t border-[#26221E] text-sm sm:text-base text-[#A69F91] font-sans leading-relaxed">
-                        {faq.answer}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                {/* CSS Accordion Container: ALWAYS present in DOM for SEO, visually toggled with CSS max-height/opacity */}
+                <div
+                  className={`transition-all duration-300 ease-in-out border-t border-[#26221E] ${
+                    isOpen
+                      ? 'max-h-96 opacity-100 p-6 pt-4'
+                      : 'max-h-0 opacity-0 p-0 overflow-hidden border-t-0'
+                  }`}
+                >
+                  <p className="text-sm sm:text-base text-[#A69F91] font-sans leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
               </div>
             );
           })}

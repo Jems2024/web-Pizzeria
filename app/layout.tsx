@@ -18,6 +18,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   display: 'swap',
 });
 
+// TODO: cambiar metadataBase a https://ilmassone.es cuando el dominio esté conectado
 export const metadata: Metadata = {
   title: 'Il Massone | Pizzería Italiana en Barcelona',
   description:
@@ -31,6 +32,11 @@ export const metadata: Metadata = {
     'pizza napolitana horno piedra',
     'trattoria familiar Barcelona',
   ],
+  // TODO: cambiar metadataBase a https://ilmassone.es cuando el dominio esté conectado
+  metadataBase: new URL('https://web-pizzeria-self.vercel.app'),
+  alternates: {
+    canonical: 'https://web-pizzeria-self.vercel.app',
+  },
   icons: {
     icon: '/logo.jpg',
     apple: '/logo.jpg',
@@ -38,16 +44,15 @@ export const metadata: Metadata = {
   authors: [{ name: 'Il Massone Ristorante & Pizzeria' }],
   creator: 'Il Massone',
   publisher: 'Il Massone',
-  metadataBase: new URL('https://ilmassone.es'),
   openGraph: {
     title: 'Il Massone | Pizzería Italiana en Barcelona',
     description:
       'Pizzería italiana en el Eixample de Barcelona. Masa artesanal de 72h, horno de piedra y recetas tradicionales.',
-    url: 'https://ilmassone.es',
+    url: 'https://web-pizzeria-self.vercel.app',
     siteName: 'Il Massone Ristorante & Pizzeria',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop',
+        url: 'https://images.unsplash.com/photo-1579751626657-72bc17010498?q=80&w=1200&auto=format&fit=crop',
         width: 1200,
         height: 630,
         alt: 'Pizza napolitana artesanal recién horneada en horno de piedra en Il Massone Barcelona',
@@ -61,7 +66,7 @@ export const metadata: Metadata = {
     title: 'Il Massone | Pizzería Italiana en Barcelona',
     description:
       'Pizzería italiana en el Eixample de Barcelona. Masa artesanal de 72h y horno de piedra.',
-    images: ['https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop'],
+    images: ['https://images.unsplash.com/photo-1579751626657-72bc17010498?q=80&w=1200&auto=format&fit=crop'],
   },
   robots: {
     index: true,

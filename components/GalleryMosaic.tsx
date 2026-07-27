@@ -35,7 +35,7 @@ const galleryPhotos = [
     id: 3,
     title: 'Amasado Manual & Tradición',
     subtitle: '72h de fermentación previa',
-    image: 'https://images.unsplash.com/photo-1579751626657-72bc17010498?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop',
     span: 'col-span-1 row-span-1',
     aspect: 'aspect-[4/3]',
   },
@@ -51,7 +51,7 @@ const galleryPhotos = [
     id: 5,
     title: 'El Toque Final',
     subtitle: 'Albahaca fresca & AOVE',
-    image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1000&auto=format&fit=crop',
     span: 'col-span-1 md:col-span-2 row-span-1',
     aspect: 'aspect-[16/9]',
   },
@@ -83,14 +83,14 @@ export default function GalleryMosaic() {
             href="https://instagram.com/il_massone_"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 md:mt-0 inline-flex items-center space-x-2 px-5 py-2.5 rounded-full bg-[#1C1814] border border-[#C9A15A]/40 text-xs font-sans uppercase tracking-widest text-[#F5F1E8] hover:text-[#C9A15A] hover:border-[#C9A15A] transition-all w-fit"
+            className="mt-6 md:mt-0 inline-flex items-center space-x-2 px-5 py-2.5 rounded-full bg-[#1C1814] border border-[#C9A15A]/40 text-xs font-sans uppercase tracking-widest text-[#F5F1E8] hover:text-[#C9A15A] hover:border-[#C9A15A] transition-all w-fit min-h-[44px]"
           >
             <InstagramIcon className="w-4 h-4 text-[#C9A15A]" />
             <span>@il_massone_ en Instagram</span>
           </a>
         </div>
 
-        {/* Asymmetric Editorial Grid */}
+        {/* Asymmetric Editorial Grid - H3 titles under H2 section header */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[240px]">
           {galleryPhotos.map((photo, idx) => (
             <motion.div
@@ -117,9 +117,9 @@ export default function GalleryMosaic() {
                 <span className="text-[10px] uppercase font-mono tracking-widest text-[#C9A15A]">
                   {photo.subtitle}
                 </span>
-                <p className="text-lg font-serif text-[#F5F1E8] font-medium">
+                <h3 className="text-lg font-serif text-[#F5F1E8] font-medium">
                   {photo.title}
-                </p>
+                </h3>
               </div>
             </motion.div>
           ))}

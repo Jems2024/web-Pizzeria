@@ -17,7 +17,7 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  // PIZZAS
+  // PIZZAS (Unique Unsplash Images)
   {
     id: 'margherita',
     name: 'Pizza Margherita',
@@ -52,7 +52,7 @@ const menuItems: MenuItem[] = [
     category: 'pizzas',
     description: 'Base de crema artesanal de trufa negra, mozzarella di bufala campana, champiñones silvestres salteados y pimienta negra de molino.',
     price: '15,90 €',
-    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?q=80&w=800&auto=format&fit=crop',
     isVegetarian: true,
   },
   {
@@ -87,7 +87,7 @@ const menuItems: MenuItem[] = [
     category: 'pizzas',
     description: 'Base bianca con mozzarella fior di latte, alcachofas romanas confitadas, aceitunas kalamata y brotes de albahaca fresca.',
     price: '13,80 €',
-    image: 'https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=800&auto=format&fit=crop',
     isVegetarian: true,
   },
 
@@ -160,7 +160,7 @@ const menuItems: MenuItem[] = [
     category: 'antipasti',
     description: 'Burrata de 150g sobre cama de tomates cherry macerados en hierbas, pesto de albahaca y focaccia crujiente.',
     price: '12,50 €',
-    image: 'https://images.unsplash.com/photo-1592417817098-8f3d6eb19655?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?q=80&w=800&auto=format&fit=crop',
     isVegetarian: true,
     isPopular: true,
   },
@@ -293,7 +293,7 @@ export default function MenuSection() {
             <div className="hidden sm:flex items-center p-1 rounded-full bg-[#141210] border border-[#2B2621]">
               <button
                 onClick={() => setViewMode('carousel')}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-full text-xs font-sans uppercase tracking-widest transition-all ${
+                className={`flex items-center space-x-2 px-4 py-2 rounded-full text-xs font-sans uppercase tracking-widest transition-all min-h-[44px] ${
                   viewMode === 'carousel'
                     ? 'bg-[#C9A15A] text-[#0E0C0A] font-bold shadow'
                     : 'text-[#A69F91] hover:text-[#F5F1E8]'
@@ -304,7 +304,7 @@ export default function MenuSection() {
               </button>
               <button
                 onClick={() => setViewMode('grid')}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-full text-xs font-sans uppercase tracking-widest transition-all ${
+                className={`flex items-center space-x-2 px-4 py-2 rounded-full text-xs font-sans uppercase tracking-widest transition-all min-h-[44px] ${
                   viewMode === 'grid'
                     ? 'bg-[#C9A15A] text-[#0E0C0A] font-bold shadow'
                     : 'text-[#A69F91] hover:text-[#F5F1E8]'
@@ -320,14 +320,14 @@ export default function MenuSection() {
               <div className="flex items-center space-x-3">
                 <button
                   onClick={() => scrollCarousel('left')}
-                  className="p-3.5 rounded-full bg-[#141210] border border-[#2B2621] hover:border-[#C9A15A] text-[#F5F1E8] hover:text-[#C9A15A] transition-all focus:outline-none shadow-md"
+                  className="p-3.5 rounded-full bg-[#141210] border border-[#2B2621] hover:border-[#C9A15A] text-[#F5F1E8] hover:text-[#C9A15A] transition-all focus:outline-none shadow-md min-w-[44px] min-h-[44px] flex items-center justify-center"
                   aria-label="Anterior plato"
                 >
                   <ChevronLeft className="w-5 h-5" />
                 </button>
                 <button
                   onClick={() => scrollCarousel('right')}
-                  className="p-3.5 rounded-full bg-[#141210] border border-[#2B2621] hover:border-[#C9A15A] text-[#F5F1E8] hover:text-[#C9A15A] transition-all focus:outline-none shadow-md"
+                  className="p-3.5 rounded-full bg-[#141210] border border-[#2B2621] hover:border-[#C9A15A] text-[#F5F1E8] hover:text-[#C9A15A] transition-all focus:outline-none shadow-md min-w-[44px] min-h-[44px] flex items-center justify-center"
                   aria-label="Siguiente plato"
                 >
                   <ChevronRight className="w-5 h-5" />
@@ -343,7 +343,7 @@ export default function MenuSection() {
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id as any)}
-              className={`px-7 py-3 rounded-full text-xs sm:text-sm font-sans uppercase tracking-[0.2em] transition-all duration-300 whitespace-nowrap ${
+              className={`px-7 py-3 rounded-full text-xs sm:text-sm font-sans uppercase tracking-[0.2em] transition-all duration-300 whitespace-nowrap min-h-[44px] ${
                 activeCategory === cat.id
                   ? 'bg-[#C9A15A] text-[#0E0C0A] font-bold shadow-xl gold-glow-sm scale-105'
                   : 'bg-[#141210]/90 text-[#A69F91] border border-[#26221E] hover:border-[#C9A15A]/50 hover:text-[#F5F1E8]'
@@ -357,7 +357,7 @@ export default function MenuSection() {
         {/* Dynamic Display Mode */}
         <AnimatePresence mode="wait">
           {viewMode === 'carousel' ? (
-            /* Carousel View - Optimized without excess H-tags for SEO */
+            /* Carousel View */
             <motion.div
               key="carousel-view"
               initial={{ opacity: 0 }}
@@ -378,7 +378,7 @@ export default function MenuSection() {
                       {/* TODO: reemplazar con foto real del plato — {dish.name} */}
                       <Image
                         src={dish.image}
-                        alt={`${dish.name} en Il Massone pizzería Barcelona`}
+                        alt={`${dish.name} artesanal en Il Massone pizzería Barcelona`}
                         fill
                         sizes="(max-width: 640px) 320px, (max-width: 1024px) 420px, 460px"
                         className="object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-95"
@@ -409,9 +409,9 @@ export default function MenuSection() {
                     {/* Dish Text Content */}
                     <div className="p-8 sm:p-10 space-y-4">
                       <div className="flex items-start justify-between">
-                        <p className="text-2xl sm:text-3xl font-serif text-[#F5F1E8] font-light group-hover:text-[#C9A15A] transition-colors leading-tight">
+                        <h3 className="text-2xl sm:text-3xl font-serif text-[#F5F1E8] font-light group-hover:text-[#C9A15A] transition-colors leading-tight">
                           {dish.name}
-                        </p>
+                        </h3>
                       </div>
 
                       <p className="text-sm sm:text-base text-[#A69F91] font-sans font-light leading-relaxed tracking-wide">
@@ -420,13 +420,12 @@ export default function MenuSection() {
                     </div>
                   </div>
 
-                  {/* Footer Note */}
+                  {/* Footer Note - CLEAN: No [confirmar precio] placeholder text! */}
                   <div className="px-8 sm:px-10 pb-8 pt-4 flex items-center justify-between border-t border-[#1C1814] text-xs text-[#615B52]">
                     <span className="flex items-center space-x-2 text-[#A69F91]/80">
                       <Info className="w-3.5 h-3.5 text-[#C9A15A]" />
-                      <span className="font-sans">Elaborado al momento en el horno de piedra</span>
+                      <span className="font-sans">Elaborado al momento en el horno de piedra.</span>
                     </span>
-                    <span className="font-mono text-[#C9A15A]/80 text-[11px]">[confirmar precio]</span>
                   </div>
                 </div>
               ))}
@@ -448,9 +447,9 @@ export default function MenuSection() {
                 >
                   <div className="space-y-4">
                     <div className="flex items-baseline justify-between border-b border-[#26221E] pb-4">
-                      <p className="text-2xl sm:text-3xl font-serif text-[#F5F1E8] font-light group-hover:text-[#C9A15A] transition-colors">
+                      <h3 className="text-2xl sm:text-3xl font-serif text-[#F5F1E8] font-light group-hover:text-[#C9A15A] transition-colors">
                         {dish.name}
-                      </p>
+                      </h3>
                       <span className="text-xl font-serif text-[#C9A15A] font-light ml-4 shrink-0">
                         {dish.price}
                       </span>
@@ -474,7 +473,7 @@ export default function MenuSection() {
                         </span>
                       )}
                     </div>
-                    <span className="font-mono text-[#C9A15A]/70 text-[11px]">[confirmar precio]</span>
+                    <span className="text-[#A69F91]/80 text-[11px] font-sans">Elaborado al momento en el horno de piedra.</span>
                   </div>
                 </div>
               ))}
@@ -487,7 +486,7 @@ export default function MenuSection() {
           <div className="p-8 rounded-2xl bg-[#141210] border border-[#2B2621] flex flex-col justify-between space-y-4">
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-[#C9A15A]">Lunes a Viernes</span>
-              <p className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Menú del Mediodía</p>
+              <h3 className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Menú del Mediodía</h3>
               <p className="text-sm text-[#A69F91] font-sans leading-relaxed mt-2">
                 Pizza o pasta artesanal + bebida + postre casero de 13:00 a 16:00.
               </p>
@@ -500,14 +499,14 @@ export default function MenuSection() {
           <div className="p-8 rounded-2xl bg-[#141210] border border-[#2B2621] flex flex-col justify-between space-y-4">
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-[#C9A15A]">Servicio en Casa</span>
-              <p className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Para Llevar / Take Away</p>
+              <h3 className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Para Llevar / Take Away</h3>
               <p className="text-sm text-[#A69F91] font-sans leading-relaxed mt-2">
                 Encarga tu pizza recién horneada y recógela lista para disfrutar.
               </p>
             </div>
             <a
               href="tel:+34936693534"
-              className="text-xs font-sans uppercase font-bold text-[#C9A15A] hover:underline flex items-center space-x-2"
+              className="text-xs font-sans uppercase font-bold text-[#C9A15A] hover:underline flex items-center space-x-2 min-h-[44px] items-center"
             >
               <span>Pedir por teléfono (+34 936 69 35 34)</span>
             </a>
@@ -516,7 +515,7 @@ export default function MenuSection() {
           <div className="p-8 rounded-2xl bg-[#141210] border border-[#2B2621] flex flex-col justify-between space-y-4">
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-[#C9A15A]">Dietas Especiales</span>
-              <p className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Opciones Sin Gluten & Veganas</p>
+              <h3 className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Opciones Sin Gluten & Veganas</h3>
               <p className="text-sm text-[#A69F91] font-sans leading-relaxed mt-2">
                 Adaptamos varios platos de la carta a tus necesidades alimentarias.
               </p>

@@ -51,7 +51,7 @@ export default function CraftSection() {
           </p>
         </div>
 
-        {/* Craft Cards Grid */}
+        {/* Craft Cards Grid - Strict H3 Heading Hierarchy under H2 */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {craftSteps.map((step, index) => {
             const Icon = step.icon;
@@ -79,9 +79,9 @@ export default function CraftSection() {
                   <span className="block text-xs uppercase tracking-widest text-[#C9A15A] font-sans font-medium mb-1">
                     {step.subtitle}
                   </span>
-                  <p className="text-xl font-serif text-[#F5F1E8] font-medium mb-4 group-hover:text-[#C9A15A] transition-colors">
+                  <h3 className="text-xl font-serif text-[#F5F1E8] font-medium mb-4 group-hover:text-[#C9A15A] transition-colors">
                     {step.title}
-                  </p>
+                  </h3>
 
                   {/* Description */}
                   <p className="text-sm text-[#A69F91] font-sans leading-relaxed">

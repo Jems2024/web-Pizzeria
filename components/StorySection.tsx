@@ -48,7 +48,7 @@ export default function StorySection() {
               </div>
             </div>
 
-            {/* Overlapping Detail Photo */}
+            {/* Overlapping Detail Photo (Unique Unsplash Image) */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -58,7 +58,7 @@ export default function StorySection() {
             >
               {/* TODO: reemplazar con foto real del horno de piedra o amasado manual */}
               <Image
-                src="https://images.unsplash.com/photo-1579751626657-72bc17010498?q=80&w=600&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?q=80&w=600&auto=format&fit=crop"
                 alt="Manos artesanas preparando la masa madre napolitana en Il Massone"
                 fill
                 sizes="224px"
@@ -100,14 +100,14 @@ export default function StorySection() {
               </p>
             </div>
 
-            {/* Feature Highlights Grid */}
+            {/* Feature Highlights Grid - Strict H3 Heading Hierarchy under H2 */}
             <div className="grid grid-cols-2 gap-4 mt-8 pt-8 border-t border-[#26221E]">
               <div className="flex items-start space-x-3">
                 <div className="p-2 rounded bg-[#C9A15A]/10 text-[#C9A15A] shrink-0">
                   <FlameKindling className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-serif text-[#F5F1E8] font-medium">Horno de Piedra</p>
+                  <h3 className="text-sm font-serif text-[#F5F1E8] font-medium">Horno de Piedra</h3>
                   <p className="text-xs text-[#A69F91] mt-0.5">Cocción a alta temperatura para la textura napolitana auténtica.</p>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function StorySection() {
                   <Heart className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-serif text-[#F5F1E8] font-medium">Trato Familiar</p>
+                  <h3 className="text-sm font-serif text-[#F5F1E8] font-medium">Trato Familiar</h3>
                   <p className="text-xs text-[#A69F91] mt-0.5">Barriga llena y corazón feliz en cada visita con Pina.</p>
                 </div>
               </div>
