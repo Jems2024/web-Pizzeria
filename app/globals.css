@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #0E0C0A;
+    --bg-card: #141210;
+    --bg-elevated: #1B1815;
+    --gold-primary: #C9A15A;
+    --gold-hover: #DFB873;
+    --gold-muted: #8F7038;
+    --text-cream: #F5F1E8;
+    --text-muted: #A69F91;
+    --text-dark-muted: #615B52;
+    --wine-dark: #3A1F1A;
+    --border-gold: rgba(201, 161, 90, 0.2);
+    --border-subtle: #26221E;
+  }
+
+  html {
+    scroll-behavior: auto !important; /* Lenis handles smooth scrolling */
+    background-color: var(--bg-dark);
+    color: var(--text-cream);
+    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-cream);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Typography Utility Classes */
+.font-serif-editorial {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* Custom scrollbar for dark mood */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0E0C0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #282420;
+  border-radius: 4px;
+  border: 1px solid rgba(201, 161, 90, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A15A;
+}
+
+/* Hide scrollbar for clean carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(20, 18, 16, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 161, 90, 0.15);
+}
+
+.glass-card {
+  background: rgba(27, 24, 21, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card:hover {
+  border-color: rgba(201, 161, 90, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(201, 161, 90, 0.15);
+}
+
+/* Glow effects */
+.gold-glow-sm {
+  box-shadow: 0 0 15px rgba(201, 161, 90, 0.2);
+}
+
+.gold-glow-lg {
+  box-shadow: 0 0 35px rgba(201, 161, 90, 0.3);
+}
+
+/* Lenis smooth scroll recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
