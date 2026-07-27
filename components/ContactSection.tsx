@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Clock, MessageCircle, Navigation, Banknote, AlertCircle } from 'lucide-react';
+import { MapPin, Phone, Clock, MessageCircle, Navigation, Banknote } from 'lucide-react';
 
 export default function ContactSection() {
   return (
@@ -35,9 +35,9 @@ export default function ContactSection() {
             className="lg:col-span-5 flex flex-col justify-between p-8 rounded-2xl bg-[#141210] border border-[#26221E] shadow-2xl space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-serif text-[#F5F1E8] font-medium mb-6 pb-4 border-b border-[#26221E]">
+              <p className="text-2xl font-serif text-[#F5F1E8] font-medium mb-6 pb-4 border-b border-[#26221E]">
                 Información del Restaurante
-              </h3>
+              </p>
 
               {/* Address */}
               <div className="flex items-start space-x-4 mb-6">

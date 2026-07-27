@@ -117,9 +117,9 @@ export default function GalleryMosaic() {
                 <span className="text-[10px] uppercase font-mono tracking-widest text-[#C9A15A]">
                   {photo.subtitle}
                 </span>
-                <h3 className="text-lg font-serif text-[#F5F1E8] font-medium">
+                <p className="text-lg font-serif text-[#F5F1E8] font-medium">
                   {photo.title}
-                </h3>
+                </p>
               </div>
             </motion.div>
           ))}

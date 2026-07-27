@@ -107,7 +107,7 @@ export default function StorySection() {
                   <FlameKindling className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-serif text-[#F5F1E8] font-medium">Horno de Piedra</h4>
+                  <p className="text-sm font-serif text-[#F5F1E8] font-medium">Horno de Piedra</p>
                   <p className="text-xs text-[#A69F91] mt-0.5">Cocción a alta temperatura para la textura napolitana auténtica.</p>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function StorySection() {
                   <Heart className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-serif text-[#F5F1E8] font-medium">Trato Familiar</h4>
+                  <p className="text-sm font-serif text-[#F5F1E8] font-medium">Trato Familiar</p>
                   <p className="text-xs text-[#A69F91] mt-0.5">Barriga llena y corazón feliz en cada visita con Pina.</p>
                 </div>
               </div>

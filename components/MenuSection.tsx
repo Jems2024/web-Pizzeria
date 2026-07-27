@@ -337,7 +337,7 @@ export default function MenuSection() {
           </div>
         </div>
 
-        {/* Filter Category Tabs (Spacious & Clean) */}
+        {/* Filter Category Tabs */}
         <div className="flex items-center space-x-3 overflow-x-auto no-scrollbar pb-6 mb-12">
           {categories.map((cat) => (
             <button
@@ -354,10 +354,10 @@ export default function MenuSection() {
           ))}
         </div>
 
-        {/* Dynamic Display Mode: Carousel or Spacious Editorial Grid */}
+        {/* Dynamic Display Mode */}
         <AnimatePresence mode="wait">
           {viewMode === 'carousel' ? (
-            /* Carousel View - Large, Spacious Editorial Cards */
+            /* Carousel View - Optimized without excess H-tags for SEO */
             <motion.div
               key="carousel-view"
               initial={{ opacity: 0 }}
@@ -406,12 +406,12 @@ export default function MenuSection() {
                       </div>
                     </div>
 
-                    {/* Dish Text Content (Spacious & Minimalist Typography) */}
+                    {/* Dish Text Content */}
                     <div className="p-8 sm:p-10 space-y-4">
                       <div className="flex items-start justify-between">
-                        <h3 className="text-2xl sm:text-3xl font-serif text-[#F5F1E8] font-light group-hover:text-[#C9A15A] transition-colors leading-tight">
+                        <p className="text-2xl sm:text-3xl font-serif text-[#F5F1E8] font-light group-hover:text-[#C9A15A] transition-colors leading-tight">
                           {dish.name}
-                        </h3>
+                        </p>
                       </div>
 
                       <p className="text-sm sm:text-base text-[#A69F91] font-sans font-light leading-relaxed tracking-wide">
@@ -448,9 +448,9 @@ export default function MenuSection() {
                 >
                   <div className="space-y-4">
                     <div className="flex items-baseline justify-between border-b border-[#26221E] pb-4">
-                      <h3 className="text-2xl sm:text-3xl font-serif text-[#F5F1E8] font-light group-hover:text-[#C9A15A] transition-colors">
+                      <p className="text-2xl sm:text-3xl font-serif text-[#F5F1E8] font-light group-hover:text-[#C9A15A] transition-colors">
                         {dish.name}
-                      </h3>
+                      </p>
                       <span className="text-xl font-serif text-[#C9A15A] font-light ml-4 shrink-0">
                         {dish.price}
                       </span>
@@ -482,12 +482,12 @@ export default function MenuSection() {
           )}
         </AnimatePresence>
 
-        {/* Quick Menu Card Navigation (Spacious Editorial Layout inspired by La Balmesina) */}
+        {/* Quick Menu Card Navigation */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-8 rounded-2xl bg-[#141210] border border-[#2B2621] flex flex-col justify-between space-y-4">
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-[#C9A15A]">Lunes a Viernes</span>
-              <h4 className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Menú del Mediodía</h4>
+              <p className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Menú del Mediodía</p>
               <p className="text-sm text-[#A69F91] font-sans leading-relaxed mt-2">
                 Pizza o pasta artesanal + bebida + postre casero de 13:00 a 16:00.
               </p>
@@ -500,7 +500,7 @@ export default function MenuSection() {
           <div className="p-8 rounded-2xl bg-[#141210] border border-[#2B2621] flex flex-col justify-between space-y-4">
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-[#C9A15A]">Servicio en Casa</span>
-              <h4 className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Para Llevar / Take Away</h4>
+              <p className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Para Llevar / Take Away</p>
               <p className="text-sm text-[#A69F91] font-sans leading-relaxed mt-2">
                 Encarga tu pizza recién horneada y recógela lista para disfrutar.
               </p>
@@ -516,7 +516,7 @@ export default function MenuSection() {
           <div className="p-8 rounded-2xl bg-[#141210] border border-[#2B2621] flex flex-col justify-between space-y-4">
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-[#C9A15A]">Dietas Especiales</span>
-              <h4 className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Opciones Sin Gluten & Veganas</h4>
+              <p className="text-xl font-serif text-[#F5F1E8] font-light mt-1">Opciones Sin Gluten & Veganas</p>
               <p className="text-sm text-[#A69F91] font-sans leading-relaxed mt-2">
                 Adaptamos varios platos de la carta a tus necesidades alimentarias.
               </p>

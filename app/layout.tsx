@@ -19,27 +19,30 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Il Massone | Pizzería Italiana Artesanal en el Eixample, Barcelona',
+  title: 'Il Massone | Pizzería Italiana en Barcelona',
   description:
-    'Auténtica pizzería & trattoria italiana en Barcelona (Carrer de Mallorca 235). Masa de 72h, horno de piedra, ambiente familiar y trato cálido de Pina. Reservas por WhatsApp.',
+    'Pizzería italiana en el Eixample de Barcelona. Masa artesanal de 72h, horno de piedra y recetas tradicionales. Reservas WhatsApp: +34 936 69 35 34.',
   keywords: [
     'pizzería italiana Barcelona',
     'pizza artesanal Eixample',
-    'restaurante italiano cerca Passeig de Gràcia',
-    'pizzería Provença Barcelona',
+    'restaurante italiano Barcelona',
+    'pizzería Provença',
     'Il Massone Barcelona',
-    'pizza napolitana horno de piedra',
+    'pizza napolitana horno piedra',
     'trattoria familiar Barcelona',
-    'menú mediodía Eixample',
   ],
+  icons: {
+    icon: '/logo.jpg',
+    apple: '/logo.jpg',
+  },
   authors: [{ name: 'Il Massone Ristorante & Pizzeria' }],
   creator: 'Il Massone',
   publisher: 'Il Massone',
   metadataBase: new URL('https://ilmassone.es'),
   openGraph: {
-    title: 'Il Massone | Pizzería Italiana Artesanal en el Eixample, Barcelona',
+    title: 'Il Massone | Pizzería Italiana en Barcelona',
     description:
-      'El secreto mejor guardado del Eixample: masa madre de 72h, horno de piedra volcánica y ambiente acogedor de velas con Pina. ¡Haz tu reserva!',
+      'Pizzería italiana en el Eixample de Barcelona. Masa artesanal de 72h, horno de piedra y recetas tradicionales.',
     url: 'https://ilmassone.es',
     siteName: 'Il Massone Ristorante & Pizzeria',
     images: [
@@ -55,9 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Il Massone | Pizzería Italiana Artesanal en Barcelona',
+    title: 'Il Massone | Pizzería Italiana en Barcelona',
     description:
-      'Masa artesanal 72h, horno de piedra y trattoria familiar en Carrer de Mallorca 235, Eixample.',
+      'Pizzería italiana en el Eixample de Barcelona. Masa artesanal de 72h y horno de piedra.',
     images: ['https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop'],
   },
   robots: {
@@ -78,6 +81,7 @@ export default function RootLayout({
     >
       <head>
         <JsonLd />
+        <link rel="apple-touch-icon" href="/logo.jpg" />
       </head>
       <body className="min-h-full flex flex-col bg-[#0E0C0A] text-[#F5F1E8] selection:bg-[#C9A15A] selection:text-[#0E0C0A]">
         <SmoothScroll>

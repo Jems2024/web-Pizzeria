@@ -102,9 +102,9 @@ export default function FAQSection() {
                           {faq.highlight}
                         </span>
                       )}
-                      <h3 className="text-base sm:text-lg font-serif text-[#F5F1E8] font-medium">
+                      <p className="text-base sm:text-lg font-serif text-[#F5F1E8] font-medium">
                         {faq.question}
-                      </h3>
+                      </p>
                     </div>
                   </div>
 

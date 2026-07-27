@@ -79,9 +79,9 @@ export default function CraftSection() {
                   <span className="block text-xs uppercase tracking-widest text-[#C9A15A] font-sans font-medium mb-1">
                     {step.subtitle}
                   </span>
-                  <h3 className="text-xl font-serif text-[#F5F1E8] font-medium mb-4 group-hover:text-[#C9A15A] transition-colors">
+                  <p className="text-xl font-serif text-[#F5F1E8] font-medium mb-4 group-hover:text-[#C9A15A] transition-colors">
                     {step.title}
-                  </h3>
+                  </p>
 
                   {/* Description */}
                   <p className="text-sm text-[#A69F91] font-sans leading-relaxed">

@@ -48,15 +48,15 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Main H1 Title */}
+        {/* Main H1 Title (Optimized for SEO Keywords & Body Text Match) */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.2 }}
           className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-tight text-[#F5F1E8] font-light leading-[1.08] mb-6"
         >
-          Pizza Artesanal <br className="hidden sm:inline" />
-          <span className="italic font-normal text-[#C9A15A]">y Alma Italiana</span>
+          Pizzería Italiana <br className="hidden sm:inline" />
+          <span className="italic font-normal text-[#C9A15A]">y Masa Artesanal en Barcelona</span>
         </motion.h1>
 
         {/* Subtitle / Value Proposition */}
@@ -66,7 +66,7 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.4 }}
           className="max-w-2xl text-base sm:text-lg md:text-xl text-[#F5F1E8]/90 font-sans font-light leading-relaxed mb-10 text-balance"
         >
-          El rincón familiar del Eixample donde la masa madre de 72h, el horno de piedra y el cariño de Pina te hacen sentir como en casa.
+          El rincón familiar del Eixample donde la pizza napolitana, la masa madre de fermentación de 72h, el horno de piedra y el cariño de Pina te hacen sentir como en casa.
         </motion.p>
 
         {/* Dual Call to Action Buttons */}
