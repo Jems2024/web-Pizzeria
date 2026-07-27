@@ -32,23 +32,23 @@ export default function Footer() {
               </span>
             </div>
 
-            <p className="text-xs text-[#A69F91] font-sans leading-relaxed max-w-sm">
+            <p className="text-sm text-[#D4CEC3] font-sans leading-relaxed max-w-sm">
               Trattoria y pizzería italiana familiar en el corazón del Eixample de Barcelona. Masa artesanal de 72h de fermentación, horno de piedra y el cariño incondicional de Pina.
             </p>
 
-            <div className="pt-2 flex items-center space-x-4">
+            <div className="pt-2 flex items-center space-x-3">
               <a
                 href="https://instagram.com/il_massone_"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-full bg-[#141210] border border-[#2B2621] hover:border-[#C9A15A] text-[#C9A15A] transition-colors"
+                className="w-11 h-11 rounded-full bg-[#141210] border border-[#2B2621] hover:border-[#C9A15A] text-[#C9A15A] transition-colors flex items-center justify-center shrink-0"
                 aria-label="Instagram de Il Massone"
               >
                 <InstagramIcon className="w-4 h-4" />
               </a>
               <a
                 href="tel:+34936693534"
-                className="p-2.5 rounded-full bg-[#141210] border border-[#2B2621] hover:border-[#C9A15A] text-[#C9A15A] transition-colors"
+                className="w-11 h-11 rounded-full bg-[#141210] border border-[#2B2621] hover:border-[#C9A15A] text-[#C9A15A] transition-colors flex items-center justify-center shrink-0"
                 aria-label="Llamar a Il Massone"
               >
                 <Phone className="w-4 h-4" />
@@ -58,21 +58,21 @@ export default function Footer() {
 
           {/* Quick Links Column */}
           <div className="md:col-span-3 space-y-3">
-            <h4 className="text-xs uppercase font-mono tracking-widest text-[#C9A15A]">Navegación</h4>
-            <ul className="space-y-2 text-xs uppercase tracking-wider text-[#A69F91]">
-              <li><a href="#nuestra-historia" className="hover:text-[#C9A15A] transition-colors">Nuestra Historia</a></li>
-              <li><a href="#proceso" className="hover:text-[#C9A15A] transition-colors">Proceso Artesanal</a></li>
-              <li><a href="#nuestra-carta" className="hover:text-[#C9A15A] transition-colors">La Carta de Platos</a></li>
-              <li><a href="#ambiente" className="hover:text-[#C9A15A] transition-colors">Ambiente & Galería</a></li>
-              <li><a href="#resenas" className="hover:text-[#C9A15A] transition-colors">Reseñas de Clientes</a></li>
-              <li><a href="#faq" className="hover:text-[#C9A15A] transition-colors">Preguntas Frecuentes</a></li>
-              <li><a href="#ubicacion" className="hover:text-[#C9A15A] transition-colors">Ubicación & Contacto</a></li>
+            <p className="text-xs uppercase font-mono tracking-widest text-[#C9A15A] font-bold">Navegación</p>
+            <ul className="space-y-2 text-xs uppercase tracking-wider text-[#D4CEC3]">
+              <li><a href="#nuestra-historia" className="hover:text-[#C9A15A] transition-colors inline-block py-1">Nuestra Historia</a></li>
+              <li><a href="#proceso" className="hover:text-[#C9A15A] transition-colors inline-block py-1">Proceso Artesanal</a></li>
+              <li><a href="#nuestra-carta" className="hover:text-[#C9A15A] transition-colors inline-block py-1">La Carta de Platos</a></li>
+              <li><a href="#ambiente" className="hover:text-[#C9A15A] transition-colors inline-block py-1">Ambiente & Galería</a></li>
+              <li><a href="#resenas" className="hover:text-[#C9A15A] transition-colors inline-block py-1">Reseñas de Clientes</a></li>
+              <li><a href="#faq" className="hover:text-[#C9A15A] transition-colors inline-block py-1">Preguntas Frecuentes</a></li>
+              <li><a href="#ubicacion" className="hover:text-[#C9A15A] transition-colors inline-block py-1">Ubicación & Contacto</a></li>
             </ul>
           </div>
 
           {/* Location & Hours Summary */}
-          <div className="md:col-span-4 space-y-3 text-xs text-[#A69F91]">
-            <h4 className="text-xs uppercase font-mono tracking-widest text-[#C9A15A]">Contacto & Horario</h4>
+          <div className="md:col-span-4 space-y-3 text-xs text-[#D4CEC3]">
+            <p className="text-xs uppercase font-mono tracking-widest text-[#C9A15A] font-bold">Contacto & Horario</p>
             <p className="flex items-start space-x-2">
               <MapPin className="w-4 h-4 text-[#C9A15A] shrink-0 mt-0.5" />
               <span>Carrer de Mallorca, 235, 08008 Barcelona</span>
@@ -81,24 +81,24 @@ export default function Footer() {
               <Phone className="w-4 h-4 text-[#C9A15A] shrink-0" />
               <a href="tel:+34936693534" className="hover:text-[#F5F1E8]">+34 936 69 35 34</a>
             </p>
-            <div className="pt-2 text-[11px] space-y-1">
+            <div className="pt-2 text-[12px] space-y-1 text-[#D4CEC3]">
               <p>Lun – Jue: 13:00–16:00 | 19:00–23:00</p>
               <p>Vie – Sáb: 13:00–16:00 | 19:00–23:30</p>
-              <p className="text-amber-500/80">Domingo cerrado</p>
+              <p className="text-[#DFB873] font-medium">Domingo cerrado</p>
             </div>
-            <p className="text-[11px] text-[#C9A15A] pt-2">
+            <p className="text-[12px] text-[#C9A15A] pt-2">
               * Aceptamos únicamente efectivo y Bizum.
             </p>
           </div>
 
         </div>
 
-        {/* Bottom Credits & Copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#615B52] space-y-4 sm:space-y-0">
+        {/* Bottom Credits & Copyright - High Contrast #D4CEC3 */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#D4CEC3] space-y-4 sm:space-y-0">
           <p>© {currentYear} Il Massone Ristorante & Pizzeria. Todos los derechos reservados.</p>
           <p className="flex items-center space-x-1">
             <span>Hecho con</span>
-            <Heart className="w-3 h-3 text-[#C9A15A] fill-[#C9A15A]" />
+            <Heart className="w-3.5 h-3.5 text-[#C9A15A] fill-[#C9A15A]" />
             <span>para amantes de la pizza artesanal en Barcelona</span>
           </p>
         </div>

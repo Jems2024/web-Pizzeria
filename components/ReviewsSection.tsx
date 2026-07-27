@@ -89,7 +89,7 @@ export default function ReviewsSection() {
             <span className="text-xs font-bold text-[#F5F1E8] font-sans">
               4.5 ★ en Google Reviews
             </span>
-            <span className="text-[10px] text-[#A69F91] font-mono">
+            <span className="text-[10px] text-[#D4CEC3] font-mono">
               (+350 opiniones reales)
             </span>
           </div>
@@ -97,7 +97,7 @@ export default function ReviewsSection() {
           <h2 className="text-3xl sm:text-5xl font-serif text-[#F5F1E8] font-light">
             Lo que Dicen Nuestros Comensales
           </h2>
-          <p className="mt-3 text-base text-[#A69F91] font-sans">
+          <p className="mt-3 text-base text-[#D4CEC3] font-sans">
             La mejor recompensa es ver a nuestros clientes volver semana tras semana.
           </p>
         </div>
@@ -135,26 +135,26 @@ export default function ReviewsSection() {
                     {current.author.charAt(0)}
                   </div>
                   <div>
-                    <h4 className="text-sm font-serif text-[#F5F1E8] font-medium flex items-center space-x-1.5">
+                    <p className="text-sm font-serif text-[#F5F1E8] font-medium flex items-center space-x-1.5">
                       <span>{current.author}</span>
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                    </h4>
-                    <span className="text-xs text-[#A69F91] font-sans">{current.role} • {current.date}</span>
+                    </p>
+                    <span className="text-xs text-[#D4CEC3] font-sans">{current.role} • {current.date}</span>
                   </div>
                 </div>
 
-                {/* Carousel Controls */}
+                {/* Carousel Controls - Full 44x44px Touch Target Size */}
                 <div className="flex items-center space-x-2">
                   <button
                     onClick={prevReview}
-                    className="p-2.5 rounded-full bg-[#1C1814] border border-[#332D27] hover:border-[#C9A15A] text-[#F5F1E8] hover:text-[#C9A15A] transition-colors"
+                    className="w-11 h-11 rounded-full bg-[#1C1814] border border-[#332D27] hover:border-[#C9A15A] text-[#F5F1E8] hover:text-[#C9A15A] transition-colors flex items-center justify-center shrink-0 min-w-[44px] min-h-[44px]"
                     aria-label="Opinión anterior"
                   >
                     <ChevronLeft className="w-5 h-5" />
                   </button>
                   <button
                     onClick={nextReview}
-                    className="p-2.5 rounded-full bg-[#1C1814] border border-[#332D27] hover:border-[#C9A15A] text-[#F5F1E8] hover:text-[#C9A15A] transition-colors"
+                    className="w-11 h-11 rounded-full bg-[#1C1814] border border-[#332D27] hover:border-[#C9A15A] text-[#F5F1E8] hover:text-[#C9A15A] transition-colors flex items-center justify-center shrink-0 min-w-[44px] min-h-[44px]"
                     aria-label="Siguiente opinión"
                   >
                     <ChevronRight className="w-5 h-5" />
@@ -164,17 +164,21 @@ export default function ReviewsSection() {
             </motion.div>
           </AnimatePresence>
 
-          {/* Dots Indicator */}
-          <div className="flex justify-center space-x-2 mt-8">
+          {/* Dots Indicator - Wrapped in 44x44px Clickable Touch Target */}
+          <div className="flex justify-center space-x-1 mt-8">
             {reviews.map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`w-2.5 h-2.5 rounded-full transition-all ${
-                  currentIndex === idx ? 'bg-[#C9A15A] w-8' : 'bg-[#26221E] hover:bg-[#A69F91]'
-                }`}
+                className="w-11 h-11 flex items-center justify-center focus:outline-none"
                 aria-label={`Ir a opinión ${idx + 1}`}
-              />
+              >
+                <span
+                  className={`h-2.5 rounded-full transition-all duration-300 ${
+                    currentIndex === idx ? 'bg-[#C9A15A] w-8' : 'bg-[#332D27] hover:bg-[#A69F91] w-2.5'
+                  }`}
+                />
+              </button>
             ))}
           </div>
         </div>

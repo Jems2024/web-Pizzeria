@@ -87,6 +87,8 @@ export default function RootLayout({
       <head>
         <JsonLd />
         <link rel="apple-touch-icon" href="/logo.jpg" />
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
       </head>
       <body className="min-h-full flex flex-col bg-[#0E0C0A] text-[#F5F1E8] selection:bg-[#C9A15A] selection:text-[#0E0C0A]">
         <SmoothScroll>

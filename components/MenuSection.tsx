@@ -17,14 +17,14 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  // PIZZAS (Unique Unsplash Images)
+  // PIZZAS (Optimized Unsplash Images: w=600, q=70)
   {
     id: 'margherita',
     name: 'Pizza Margherita',
     category: 'pizzas',
     description: 'Tomate San Marzano DOP, mozzarella fior di latte, albahaca fresca y aceite de oliva virgen extra de primera prensa.',
     price: '11,50 €',
-    image: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=70&w=600&auto=format&fit=crop',
     isVegetarian: true,
     isPopular: true,
   },
@@ -34,7 +34,7 @@ const menuItems: MenuItem[] = [
     category: 'pizzas',
     description: 'Tomate San Marzano, mozzarella fior di latte, salami picante de Calabria y un toque sutil de chile fresco infusionado.',
     price: '14,20 €',
-    image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?q=70&w=600&auto=format&fit=crop',
     isPopular: true,
   },
   {
@@ -43,7 +43,7 @@ const menuItems: MenuItem[] = [
     category: 'pizzas',
     description: 'Masa madre de 72h coronada con burrata fresca entera de la Puglia, prosciutto di Parma 24 meses y rúcula selvática.',
     price: '15,50 €',
-    image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=70&w=600&auto=format&fit=crop',
     isPopular: true,
   },
   {
@@ -52,7 +52,7 @@ const menuItems: MenuItem[] = [
     category: 'pizzas',
     description: 'Base de crema artesanal de trufa negra, mozzarella di bufala campana, champiñones silvestres salteados y pimienta negra de molino.',
     price: '15,90 €',
-    image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?q=70&w=600&auto=format&fit=crop',
     isVegetarian: true,
   },
   {
@@ -61,7 +61,7 @@ const menuItems: MenuItem[] = [
     category: 'pizzas',
     description: 'Tomate San Marzano, mozzarella, jamón cocido italiano, corazón de alcachofas romanas, champiñones y aceitunas negras.',
     price: '13,90 €',
-    image: 'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=70&w=600&auto=format&fit=crop',
   },
   {
     id: '4quesos',
@@ -69,7 +69,7 @@ const menuItems: MenuItem[] = [
     category: 'pizzas',
     description: 'Armonía de mozzarella, gorgonzola cremoso DOP, provolone ahumado y lascas finas de parmigiano reggiano madurado.',
     price: '13,90 €',
-    image: 'https://images.unsplash.com/photo-1573821663912-569905455b1c?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1573821663912-569905455b1c?q=70&w=600&auto=format&fit=crop',
     isVegetarian: true,
   },
   {
@@ -78,7 +78,7 @@ const menuItems: MenuItem[] = [
     category: 'pizzas',
     description: 'Verduras de huerto de temporada asadas a la piedra: berenjenas, calabacín, pimientos amarillos y pesto de albahaca casero.',
     price: '13,50 €',
-    image: 'https://images.unsplash.com/photo-1585238342024-78d387f4a707?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1585238342024-78d387f4a707?q=70&w=600&auto=format&fit=crop',
     isVegetarian: true,
   },
   {
@@ -87,7 +87,7 @@ const menuItems: MenuItem[] = [
     category: 'pizzas',
     description: 'Base bianca con mozzarella fior di latte, alcachofas romanas confitadas, aceitunas kalamata y brotes de albahaca fresca.',
     price: '13,80 €',
-    image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=70&w=600&auto=format&fit=crop',
     isVegetarian: true,
   },
 
@@ -98,7 +98,7 @@ const menuItems: MenuItem[] = [
     category: 'pastas',
     description: 'La auténtica receta romana sin nata: yema de huevo de granja, guanciale de cerdo crujiente y abundante Pecorino Romano.',
     price: '13,50 €',
-    image: 'https://images.unsplash.com/photo-1612874742237-6526221588e3?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1612874742237-6526221588e3?q=70&w=600&auto=format&fit=crop',
     isPopular: true,
   },
   {
@@ -107,7 +107,7 @@ const menuItems: MenuItem[] = [
     category: 'pastas',
     description: 'Pasta fresca elaborada a mano, salteada con manteca de trufa negra del Piamonte y Parmigiano Reggiano 24 meses.',
     price: '15,50 €',
-    image: 'https://images.unsplash.com/photo-1621996346565-e3d5d6281273?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1621996346565-e3d5d6281273?q=70&w=600&auto=format&fit=crop',
     isPopular: true,
   },
   {
@@ -116,7 +116,7 @@ const menuItems: MenuItem[] = [
     category: 'pastas',
     description: 'Gnocchi artesanales de patata gratinados suavemente al horno en salsa aterciopelada de cuatro quesos italianos.',
     price: '13,90 €',
-    image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=70&w=600&auto=format&fit=crop',
     isVegetarian: true,
   },
   {
@@ -125,7 +125,7 @@ const menuItems: MenuItem[] = [
     category: 'pastas',
     description: 'Pasta artesanal con pesto casero de pistachos de Bronte, romanesco salteado y virutas de queso curado.',
     price: '14,50 €',
-    image: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=70&w=600&auto=format&fit=crop',
     isVegetarian: true,
   },
   {
@@ -134,7 +134,7 @@ const menuItems: MenuItem[] = [
     category: 'pastas',
     description: 'Láminas de pasta fresca intercaladas con ragù boloñés de ternera estofada a fuego lento y bechamel aromática.',
     price: '13,50 €',
-    image: 'https://images.unsplash.com/photo-1574894709920-11b28e7367e3?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1574894709920-11b28e7367e3?q=70&w=600&auto=format&fit=crop',
   },
   {
     id: 'bolonesa',
@@ -142,7 +142,7 @@ const menuItems: MenuItem[] = [
     category: 'pastas',
     description: 'Ragù tradicional estofado durante 6 horas con sofrito de verduras, carne seleccionada, tomate y aromáticas.',
     price: '12,90 €',
-    image: 'https://images.unsplash.com/photo-1598866594230-a7c12756597f?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1598866594230-a7c12756597f?q=70&w=600&auto=format&fit=crop',
   },
   {
     id: 'risotto-dia',
@@ -150,7 +150,7 @@ const menuItems: MenuItem[] = [
     category: 'pastas',
     description: 'Arroz Carnaroli mantecado al momento según la sugerencia diaria del chef con caldo de verduras de temporada.',
     price: '14,80 €',
-    image: 'https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?q=70&w=600&auto=format&fit=crop',
   },
 
   // ANTIPASTI
@@ -160,7 +160,7 @@ const menuItems: MenuItem[] = [
     category: 'antipasti',
     description: 'Burrata de 150g sobre cama de tomates cherry macerados en hierbas, pesto de albahaca y focaccia crujiente.',
     price: '12,50 €',
-    image: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?q=70&w=600&auto=format&fit=crop',
     isVegetarian: true,
     isPopular: true,
   },
@@ -170,7 +170,7 @@ const menuItems: MenuItem[] = [
     category: 'antipasti',
     description: 'Horneada al momento sobre piedra con romero silvestre, sal de flor Maldon y aceite de oliva virgen extra.',
     price: '6,50 €',
-    image: 'https://images.unsplash.com/photo-1579684947550-22e945225d9a?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1579684947550-22e945225d9a?q=70&w=600&auto=format&fit=crop',
     isVegetarian: true,
   },
   {
@@ -179,7 +179,7 @@ const menuItems: MenuItem[] = [
     category: 'antipasti',
     description: 'Mejillones de roca frescos salteados con ajo, perejil, caldo suave de vino blanco italiano y guindilla sutil.',
     price: '11,80 €',
-    image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=70&w=600&auto=format&fit=crop',
   },
   {
     id: 'antipasto-misto',
@@ -187,7 +187,7 @@ const menuItems: MenuItem[] = [
     category: 'antipasti',
     description: 'Tabla de charcutería artesanal y quesos importados: Prosciutto di Parma, Mortadella con pistacho, Provolone y aceitunas.',
     price: '14,90 €',
-    image: 'https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1541529086526-db283c563270?q=70&w=600&auto=format&fit=crop',
   },
 
   // POSTRES
@@ -197,7 +197,7 @@ const menuItems: MenuItem[] = [
     category: 'postres',
     description: 'Elaborado cada mañana con Savoiardi italianos empapados en espresso, crema de mascarpone fresco y cacao amargo.',
     price: '6,50 €',
-    image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=70&w=600&auto=format&fit=crop',
     isPopular: true,
   },
   {
@@ -206,7 +206,7 @@ const menuItems: MenuItem[] = [
     category: 'postres',
     description: 'Textura cremosa y horneada al horno de piedra con coulis casero de frutos rojos de temporada.',
     price: '6,50 €',
-    image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=70&w=600&auto=format&fit=crop',
   },
 
   // BEBIDAS
@@ -216,7 +216,7 @@ const menuItems: MenuItem[] = [
     category: 'bebidas',
     description: 'Selección exclusiva de pequeñas bodegas italianas. Disponible por copa o botella entera.',
     price: '4,00 € / 16,00 €',
-    image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=70&w=600&auto=format&fit=crop',
   },
   {
     id: 'limoncello',
@@ -224,7 +224,7 @@ const menuItems: MenuItem[] = [
     category: 'bebidas',
     description: 'Digestivo artesanal congelado, elaborado con corteza de limones de la costa napolitana.',
     price: '4,50 €',
-    image: 'https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556881286-fc6915169721?q=70&w=600&auto=format&fit=crop',
   },
   {
     id: 'cerveza',
@@ -232,7 +232,7 @@ const menuItems: MenuItem[] = [
     category: 'bebidas',
     description: 'Cerveza rubia tradicional de malta muy helada.',
     price: '3,80 €',
-    image: 'https://images.unsplash.com/photo-1608270586620-248524c67de9?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1608270586620-248524c67de9?q=70&w=600&auto=format&fit=crop',
   },
   {
     id: 'espresso',
@@ -240,7 +240,7 @@ const menuItems: MenuItem[] = [
     category: 'bebidas',
     description: 'Tueste italiano intenso servido con crema espesa y perfumada.',
     price: '2,00 €',
-    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=70&w=600&auto=format&fit=crop',
   },
 ];
 
@@ -373,13 +373,14 @@ export default function MenuSection() {
                   className="w-[320px] sm:w-[420px] md:w-[460px] shrink-0 snap-start rounded-2xl bg-[#141210] border border-[#26221E] hover:border-[#C9A15A]/50 overflow-hidden group transition-all duration-500 hover:shadow-2xl hover:shadow-[#C9A15A]/10 flex flex-col justify-between"
                 >
                   <div>
-                    {/* Dish Image Container */}
+                    {/* Dish Image Container - Optimized sizes & quality */}
                     <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0E0C0A]">
                       {/* TODO: reemplazar con foto real del plato — {dish.name} */}
                       <Image
                         src={dish.image}
                         alt={`${dish.name} artesanal en Il Massone pizzería Barcelona`}
                         fill
+                        quality={70}
                         sizes="(max-width: 640px) 320px, (max-width: 1024px) 420px, 460px"
                         className="object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-95"
                       />
@@ -420,7 +421,7 @@ export default function MenuSection() {
                     </div>
                   </div>
 
-                  {/* Footer Note - CLEAN: No [confirmar precio] placeholder text! */}
+                  {/* Footer Note */}
                   <div className="px-8 sm:px-10 pb-8 pt-4 flex items-center justify-between border-t border-[#1C1814] text-xs text-[#615B52]">
                     <span className="flex items-center space-x-2 text-[#A69F91]/80">
                       <Info className="w-3.5 h-3.5 text-[#C9A15A]" />

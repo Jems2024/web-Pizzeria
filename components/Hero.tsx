@@ -12,10 +12,11 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         {/* TODO: reemplazar con foto real del local — pizza napolitana saliendo del horno de piedra */}
         <Image
-          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2000&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=70&w=1200&auto=format&fit=crop"
           alt="Pizza napolitana artesanal recién horneada en horno de piedra en Il Massone Barcelona"
           fill
           priority
+          quality={75}
           sizes="100vw"
           className="object-cover object-center filter brightness-[0.38] contrast-[1.15] scale-105"
         />
